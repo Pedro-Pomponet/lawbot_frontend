@@ -1,0 +1,190 @@
+/* Sistema de Análise de Risco */
+.risk-analysis {
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.risk-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.case-selector {
+    padding: 8px;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    min-width: 200px;
+}
+
+.risk-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.panel {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Painel de Sucesso */
+.success-panel {
+    grid-column: 1 / -1;
+}
+
+.success-rate {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.rate-circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+.success-factors {
+    margin-top: 20px;
+}
+
+.factor {
+    margin: 10px 0;
+}
+
+.factor-bar {
+    height: 8px;
+    border-radius: 4px;
+    margin-top: 5px;
+}
+
+/* Casos Similares */
+.similar-cases {
+    grid-column: 1 / 2;
+}
+
+.similar-case {
+    padding: 15px;
+    background: white;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.case-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.case-meta {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+    color: #6c757d;
+    font-size: 0.9em;
+}
+
+/* Estimativas */
+.estimates {
+    grid-column: 2 / 3;
+}
+
+.cost-breakdown {
+    margin: 15px 0;
+}
+
+.cost-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.total-cost {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 2px solid #dee2e6;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.timeline {
+    margin-top: 20px;
+}
+
+.timeline-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 15px 0;
+}
+
+.phase-marker {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #0d6efd;
+}
+
+/* Estratégias */
+.strategies {
+    grid-column: 1 / -1;
+}
+
+.strategy-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.strategy-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.strategy-stats {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+    color: #6c757d;
+}
+
+.strategy-pros-cons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #dee2e6;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .risk-content {
+        grid-template-columns: 1fr;
+    }
+
+    .similar-cases,
+    .estimates {
+        grid-column: 1 / -1;
+    }
+
+    .strategy-pros-cons {
+        grid-template-columns: 1fr;
+    }
+}

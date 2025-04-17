@@ -1,0 +1,156 @@
+.connect-process {
+  padding: 6rem 5%;
+  background: white;
+}
+
+.process-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.section-title h2 {
+  font-size: 3.2rem;
+  color: #1E2F38;
+  line-height: 1.1;
+  margin: 0;
+}
+
+.section-title h2 span {
+  color: #FF0000;
+}
+
+.process-flow {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  padding: 2rem 0 8rem;
+}
+
+.flow-line {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Linha com setas */
+.flow-line::before {
+  content: '';
+  position: absolute;
+  left: 10%;
+  right: 10%;
+  top: 50%;
+  height: 2px;
+  background: repeating-linear-gradient(
+    to right,
+    #ccc 0,
+    #ccc 8px,
+    transparent 8px,
+    transparent 12px
+  );
+}
+
+/* Setas */
+.flow-line::after {
+  content: '›';
+  position: absolute;
+  right: 8%;
+  top: 40%;
+  color: #ccc;
+  font-size: 24px;
+}
+
+.flow-node {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.flow-icon {
+  width: 80px;
+  height: 80px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.flow-icon:hover {
+  transform: translateY(-5px);
+}
+
+.flow-icon img {
+  width: 60%;
+  height: 60%;
+  object-fit: contain;
+}
+
+.node-label {
+  font-size: 0.9rem;
+  color: #666;
+  text-align: center;
+}
+
+.step-description {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 280px;
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  margin-top: 1rem;
+  text-align: center;
+  color: #4a5568;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  animation: fadeIn 0.3s ease;
+  z-index: 3;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -10px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
+
+@media (max-width: 768px) {
+  .section-title h2 {
+    font-size: 2.5rem;
+  }
+
+  .flow-line {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .flow-line::before,
+  .flow-line::after {
+    display: none;
+  }
+
+  .step-description {
+    position: static;
+    transform: none;
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+} 

@@ -1,0 +1,160 @@
+:root {
+  --primary-color: #1E2F38;
+  --secondary-color: #FF0000;
+  --accent-color: #2196F3;
+  --background-color: #f5f7fa;
+  --text-primary: #1E2F38;
+  --text-secondary: #666;
+  --card-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.client-dashboard {
+  padding: 2rem;
+  background: var(--background-color);
+  min-height: 100vh;
+}
+
+.dashboard-header {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  box-shadow: var(--card-shadow);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.profile-icon {
+  font-size: 3rem !important;
+  color: var(--secondary-color);
+}
+
+.user-info h2 {
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.user-info p {
+  color: var(--text-secondary);
+  margin: 0.5rem 0 0 0;
+}
+
+.user-contacts {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 0.5rem;
+  color: var(--text-secondary);
+}
+
+.user-contacts span {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.dashboard-content {
+  display: grid;
+  gap: 2rem;
+}
+
+.info-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: var(--card-shadow);
+}
+
+.info-card h3 {
+  color: var(--text-primary);
+  margin: 0 0 1rem 0;
+}
+
+.info-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.info-card li {
+  padding: 0.5rem 0;
+  color: var(--text-secondary);
+  border-bottom: 1px solid #eee;
+}
+
+.info-card li:last-child {
+  border-bottom: none;
+}
+
+.feature-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.feature-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: var(--card-shadow);
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.feature-icon {
+  font-size: 3rem !important;
+  color: var(--secondary-color);
+  margin-bottom: 1rem;
+}
+
+.feature-card h3 {
+  color: var(--text-primary);
+  margin: 0 0 1rem 0;
+}
+
+.feature-card p {
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+}
+
+.coming-soon {
+  padding: 0.5rem 1rem;
+  background: var(--background-color);
+  border: none;
+  border-radius: 20px;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  cursor: not-allowed;
+}
+
+.notifications-btn {
+  width: 40px;
+  height: 40px;
+  border: none;
+  background: var(--background-color);
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.notifications-btn:hover {
+  background: #eee;
+}
+
+.notifications-btn .MuiSvgIcon-root {
+  color: var(--secondary-color);
+} 

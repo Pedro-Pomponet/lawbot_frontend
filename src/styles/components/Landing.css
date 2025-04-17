@@ -1,0 +1,564 @@
+/* Reset básico */
+.landing-container {
+  min-height: 100vh;
+  position: relative;
+  color: white;
+  overflow-x: hidden;
+}
+
+/* Header */
+.header-bg {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: #1E2F38;
+  overflow: hidden;
+}
+
+.header-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+/* Conteúdo do meio */
+.content-section {
+  background: #ffffff;
+  padding: 6rem 5%;
+  position: relative;
+  z-index: 1;
+}
+
+/* Seção final com background */
+.features-section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-image: url('../../assets/images/background_fundo.png');
+  background-size: cover;
+  background-position: center;
+  padding: 6rem 5%;
+}
+
+/* Header com imagem */
+.header-bg {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.6)
+  );
+}
+
+.header-content {
+  position: relative;
+  z-index: 1;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Área branca abaixo do header */
+.white-section {
+  background: #ffffff;
+  padding: 4rem 5%;
+  margin-top: -2rem;
+  position: relative;
+  min-height: 800px;
+}
+
+/* Navegação */
+.landing-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 5%;
+  position: relative;
+  z-index: 2;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav-logo img {
+  height: 40px;
+}
+
+.nav-logo span {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.login-btn {
+  padding: 0.5rem 1.5rem;
+  background: #FF0000;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+/* Seção principal */
+.hero-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5%;
+  padding: 0 5%;
+  margin-top: 1rem;
+  align-items: flex-start;
+  min-height: auto;
+  position: relative;
+  z-index: 2;
+}
+
+/* Conteúdo da esquerda */
+.hero-content {
+  padding: 0 5%;
+  margin-top: 4rem;
+  position: relative;
+  z-index: 2;
+  max-width: 600px;
+}
+
+.subtitle {
+  color: #ccc;
+  margin-bottom: 1rem;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  color: white;
+  margin-bottom: 2rem;
+  line-height: 1.2;
+}
+
+.users-online {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.avatars {
+  display: flex;
+}
+
+.talk-btn {
+  padding: 1rem 2rem;
+  background: #FF0000;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+/* Seção de serviços */
+.services-section {
+  padding: 4rem 5%;
+  display: flex;
+  width: 100%;
+  margin-top: 120px; /* Espaçamento do header */
+}
+
+/* Texto à esquerda */
+.services-text {
+  flex: 0 0 40%;
+}
+
+.services-text h2 {
+  font-size: 2.8rem;
+  color: #1E2F38;
+  line-height: 1.2;
+}
+
+.services-text h2 span {
+  color: #FF0000;
+}
+
+.services-text p {
+  margin-top: 1.5rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Grid de cards */
+.services-grid {
+  flex: 0 0 70%;
+  display: grid;
+  grid-template-columns: repeat(2, 450px); /* Cards bem maiores */
+  gap: 32px;
+  position: relative;
+}
+
+/* Cards */
+.service-card {
+  width: 450px; /* Aumentado */
+  height: 280px; /* Aumentado proporcionalmente */
+  padding: 3rem;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 0 0 12px rgba(10, 116, 243, 0.25);
+}
+
+/* Posicionamento específico */
+.service-card:nth-child(1) {
+  background: #E6F9FF;
+  margin-right: -10px;
+}
+
+.service-card:nth-child(2) {
+  background: #FEF2E9;
+  margin-left: 10px;
+  margin-top: 20px;
+}
+
+.service-card:nth-child(3) {
+  background: #FFEBE6;
+  margin-right: -20px;
+  margin-top: -10px;
+}
+
+.service-card:nth-child(4) {
+  background: #EAF3FE;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+/* Ícone */
+.icon-wrapper {
+  width: 100px; /* Aumentado */
+  height: 100px; /* Aumentado */
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.icon-wrapper img {
+  width: 50px; /* Aumentado */
+  height: 50px; /* Aumentado */
+}
+
+/* Textos do card */
+.service-card h3 {
+  font-size: 2rem; /* Aumentado */
+  color: #333;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+}
+
+.service-card p {
+  color: #666;
+  font-size: 1.2rem; /* Aumentado */
+  line-height: 1.6;
+  max-width: 85%;
+  margin: 0 auto;
+}
+
+/* Remover estilos antigos */
+.features-section,
+.features-carousel,
+.carousel-cards,
+.feature-card {
+  display: none;
+}
+
+/* Formulário de login/cadastro */
+.auth-form {
+  justify-self: flex-end; /* Alinhado à direita */
+  margin-right: 5%; /* Mesmo padding do nav */
+  margin-top: 1rem;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(8px);
+  padding: 2rem;
+  border-radius: 20px;
+  color: white;
+  max-width: 400px;
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
+}
+
+.auth-form h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1.2rem;
+  text-align: center;
+  font-weight: 500;
+}
+
+.form-group {
+  margin-bottom: 0.8rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.7rem 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.05);
+  color: white;
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+}
+
+.form-group input:focus {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.auth-btn {
+  width: 100%;
+  padding: 0.8rem;
+  background: #4CAF50;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 0.8rem;
+  transition: all 0.2s ease;
+}
+
+.auth-btn:hover {
+  background: #45a049;
+  transform: translateY(-1px);
+}
+
+.auth-switch {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.auth-switch button {
+  background: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 0.9rem;
+  padding: 0.4rem;
+}
+
+.auth-switch button:hover {
+  color: white;
+}
+
+.user-type-selection {
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.user-type-selection h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.8rem;
+  color: white;
+  font-weight: 500;
+}
+
+.user-type-selection p {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 1.5rem;
+}
+
+.type-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.type-btn {
+  padding: 1.4rem;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  color: white; /* Garantindo que o texto seja branco */
+  transition: all 0.3s ease;
+}
+
+.type-btn.lawyer {
+  background: #FF0000; /* Vermelho da balança */
+  color: white;
+}
+
+.type-btn.client {
+  background: rgba(255, 255, 255, 0.12);
+  color: white;
+}
+
+.type-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.type-btn.lawyer:hover {
+  background: #E60000; /* Vermelho um pouco mais escuro no hover */
+}
+
+.type-btn.client:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Seção de Tipos de Processo */
+.process-types {
+  padding: 6rem 5%;
+  background: #fff;
+}
+
+.process-types h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 3rem;
+}
+
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.process-card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.process-card:hover {
+  transform: translateY(-5px);
+}
+
+.process-card:nth-child(1) { background: #E6F9FF; }
+.process-card:nth-child(2) { background: #FEF2E9; }
+.process-card:nth-child(3) { background: #FFEBE6; }
+.process-card:nth-child(4) { background: #EAF3FE; }
+
+.process-icon {
+  width: 64px;
+  height: 64px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.process-icon img {
+  width: 32px;
+  height: 32px;
+}
+
+.process-card h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.process-card p {
+  color: #666;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Seção Success Stories */
+.success-section {
+  padding: 6rem 5%;
+  text-align: center;
+  background: white;
+}
+
+.success-section h2 {
+  color: #666;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.success-section h3 {
+  color: #FF0000;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+
+.success-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.success-card {
+  padding: 2rem;
+  border-radius: 8px;
+  background: #FEF2E9;
+}
+
+/* Seção Connect */
+.connect-section {
+  padding: 6rem 5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+/* Seção Experience */
+.experience-section {
+  padding: 6rem 5%;
+  text-align: center;
+  background: url('../../assets/images/background_fundo.png') no-repeat center/cover;
+}
+
+.experience-section h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.experience-section h3 {
+  color: #FF0000;
+  font-size: 2.5rem;
+  margin-bottom: 4rem;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}

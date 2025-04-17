@@ -1,0 +1,75 @@
+.mock-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #1a365d 0%, #2a4365 100%);
+    padding: 20px;
+}
+
+.mock-card {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.mock-card h2 {
+    color: #2d3748;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.mock-card p {
+    color: #718096;
+    margin-bottom: 30px;
+}
+
+.mock-item {
+    background: #f7fafc;
+    padding: 25px;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.mock-item p {
+    margin: 10px 0;
+    color: #4a5568;
+}
+
+.mock-item strong {
+    color: #2d3748;
+    margin-right: 10px;
+}
+
+.mock-back-button {
+    width: 100%;
+    padding: 12px;
+    background: #4299e1;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.mock-back-button:hover {
+    background: #3182ce;
+}
+
+@media (max-width: 480px) {
+    .mock-card {
+        padding: 30px 20px;
+    }
+
+    .mock-card h2 {
+        font-size: 1.5rem;
+    }
+} 

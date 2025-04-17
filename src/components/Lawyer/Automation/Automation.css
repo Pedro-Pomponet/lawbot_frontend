@@ -1,0 +1,48 @@
+.automation-container {
+    padding: 2rem;
+}
+
+.automation-header {
+    margin-bottom: 2rem;
+}
+
+.automation-header h2 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.automation-header p {
+    color: var(--text-secondary);
+}
+
+.feature-coming-soon {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: var(--card-shadow);
+    text-align: center;
+}
+
+.feature-coming-soon h3 {
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+.feature-coming-soon ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 2rem;
+    text-align: left;
+    max-width: 400px;
+    margin: 2rem auto;
+}
+
+.feature-coming-soon li {
+    padding: 0.5rem 0;
+    color: var(--text-secondary);
+    border-bottom: 1px solid #eee;
+}
+
+.feature-coming-soon li:last-child {
+    border-bottom: none;
+} 

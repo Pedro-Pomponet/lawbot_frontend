@@ -1,0 +1,86 @@
+.case-timeline {
+    padding: 20px;
+}
+
+.timeline-header {
+    margin-bottom: 30px;
+}
+
+.timeline-header h2 {
+    margin: 0 0 10px 0;
+    color: var(--text-primary);
+}
+
+.selected-case-info {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.selected-case-info h3 {
+    margin: 0;
+    color: var(--text-primary);
+}
+
+.selected-case-info p {
+    margin: 5px 0 0 0;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+.timeline-content {
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.timeline-event {
+    padding: 15px;
+    background: #f5f5f5;
+    border-radius: 8px;
+    max-width: 300px;
+}
+
+.event-date {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+}
+
+.timeline-event h3 {
+    margin: 5px 0;
+    font-size: 1rem;
+    color: var(--text-primary);
+}
+
+.timeline-event p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+.timeline-dot-document { background-color: #2196F3 !important; }
+.timeline-dot-court { background-color: #4CAF50 !important; }
+.timeline-dot-event { background-color: #FF9800 !important; }
+.timeline-dot-attachment { background-color: #9C27B0 !important; }
+.timeline-dot-note { background-color: #795548 !important; }
+
+.MuiTimelineDot-root {
+    padding: 8px !important;
+}
+
+.MuiTimelineDot-root .MuiSvgIcon-root {
+    font-size: 1.2rem;
+    color: white;
+}
+
+.MuiTimelineConnector-root {
+    background-color: var(--border-color) !important;
+}
+
+@media (max-width: 768px) {
+    .timeline-event {
+        max-width: none;
+    }
+} 

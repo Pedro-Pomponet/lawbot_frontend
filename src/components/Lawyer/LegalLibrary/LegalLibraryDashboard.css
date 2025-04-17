@@ -1,0 +1,464 @@
+.legal-library-dashboard {
+    display: flex;
+    height: 100vh;
+    background-color: var(--background-color);
+}
+
+.library-sidebar {
+    width: 280px;
+    background-color: white;
+    box-shadow: var(--card-shadow);
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-header {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin-bottom: 2rem;
+}
+
+.sidebar-header h2 {
+    color: var(--text-primary);
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.sidebar-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-nav li {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 0.8rem 1rem;
+    color: var(--text-secondary);
+    cursor: pointer;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.sidebar-nav li:hover {
+    background-color: rgba(30, 47, 56, 0.05);
+}
+
+.sidebar-nav li.active {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.library-content {
+    flex: 1;
+    padding: 2rem;
+    overflow-y: auto;
+}
+
+.overview-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.overview-header h2 {
+    color: var(--text-primary);
+    margin: 0;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    box-shadow: var(--card-shadow);
+    width: 300px;
+}
+
+.search-container input {
+    border: none;
+    outline: none;
+    margin-left: 0.5rem;
+    flex: 1;
+}
+
+.statistics-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.stat-card {
+    background-color: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: var(--card-shadow);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.stat-card svg {
+    color: var(--primary-color);
+    font-size: 2rem;
+}
+
+.stat-content h3 {
+    color: var(--text-primary);
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.stat-content p {
+    color: var(--text-secondary);
+    margin: 0.5rem 0 0 0;
+    font-size: 0.9rem;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.section-header h3 {
+    color: var(--text-primary);
+    margin: 0;
+}
+
+.view-all-btn {
+    background: none;
+    border: none;
+    color: var(--primary-color);
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.documents-table {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: var(--card-shadow);
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 1rem;
+    text-align: left;
+}
+
+th {
+    background-color: rgba(30, 47, 56, 0.05);
+    color: var(--text-secondary);
+    font-weight: 500;
+}
+
+tr {
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+tr:hover {
+    background-color: rgba(30, 47, 56, 0.02);
+}
+
+tr:last-child {
+    border-bottom: none;
+}
+
+.status-badge {
+    display: inline-block;
+    padding: 0.3rem 0.8rem;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.status-badge.signed {
+    background-color: rgba(0, 200, 83, 0.1);
+    color: #00C853;
+}
+
+.status-badge.unsigned {
+    background-color: rgba(255, 87, 34, 0.1);
+    color: #FF5722;
+}
+
+.actions-cell {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.action-btn {
+    background: none;
+    border: none;
+    color: var(--text-secondary);
+    cursor: pointer;
+    padding: 0.3rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.action-btn:hover {
+    background-color: rgba(30, 47, 56, 0.05);
+    color: var(--primary-color);
+}
+
+.templates-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.template-card {
+    background-color: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: var(--card-shadow);
+    transition: all 0.3s ease;
+}
+
+.template-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+.template-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.template-header svg {
+    color: var(--primary-color);
+}
+
+.favorite-btn {
+    background: none;
+    border: none;
+    color: #FFD700;
+    cursor: pointer;
+}
+
+.template-card h4 {
+    color: var(--text-primary);
+    margin: 0 0 0.5rem 0;
+}
+
+.template-category {
+    color: var(--text-secondary);
+    margin: 0 0 0.5rem 0;
+    font-size: 0.9rem;
+}
+
+.template-usage {
+    color: var(--text-secondary);
+    margin: 0 0 1rem 0;
+    font-size: 0.8rem;
+}
+
+.template-actions {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.template-btn {
+    flex: 1;
+    padding: 0.5rem;
+    border: 1px solid var(--primary-color);
+    border-radius: 4px;
+    background: none;
+    color: var(--primary-color);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.template-btn:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* Modal de Assinatura Eletrônica */
+.esign-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.esign-modal {
+    background-color: white;
+    border-radius: 12px;
+    width: 800px;
+    max-width: 90%;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    border-bottom: 1px solid #eee;
+}
+
+.modal-header h3 {
+    color: var(--text-primary);
+    margin: 0;
+}
+
+.close-modal {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--text-secondary);
+}
+
+.modal-content {
+    padding: 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.document-preview h4,
+.signature-area h4 {
+    color: var(--text-primary);
+    margin: 0 0 1rem 0;
+}
+
+.preview-placeholder {
+    height: 300px;
+    background-color: rgba(30, 47, 56, 0.05);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-secondary);
+}
+
+.preview-placeholder svg {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.signature-canvas {
+    height: 200px;
+    border: 1px dashed var(--text-secondary);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+}
+
+.signature-options {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.signature-options button {
+    flex: 1;
+    padding: 0.5rem;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    background: none;
+    color: var(--text-secondary);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.signature-options button:hover {
+    background-color: rgba(30, 47, 56, 0.05);
+}
+
+.modal-actions {
+    padding: 1.5rem;
+    border-top: 1px solid #eee;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+.cancel-btn,
+.sign-btn {
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.cancel-btn {
+    background: none;
+    border: 1px solid var(--text-secondary);
+    color: var(--text-secondary);
+}
+
+.sign-btn {
+    background-color: var(--primary-color);
+    border: none;
+    color: white;
+}
+
+.cancel-btn:hover {
+    background-color: rgba(30, 47, 56, 0.05);
+}
+
+.sign-btn:hover {
+    background-color: var(--secondary-color);
+}
+
+@media (max-width: 768px) {
+    .legal-library-dashboard {
+        flex-direction: column;
+    }
+    
+    .library-sidebar {
+        width: 100%;
+        padding: 1rem;
+    }
+    
+    .library-content {
+        padding: 1rem;
+    }
+    
+    .modal-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .overview-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+    
+    .search-container {
+        width: 100%;
+    }
+} 

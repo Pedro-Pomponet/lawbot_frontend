@@ -1,0 +1,135 @@
+.task-management-card {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: var(--card-shadow);
+}
+
+.task-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+.stat-item {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 1rem;
+    background: var(--background-color);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.stat-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.stat-item .MuiSvgIcon-root {
+    color: var(--primary-color);
+    font-size: 1.8rem;
+}
+
+.recent-tasks {
+    margin-top: 1.5rem;
+}
+
+.recent-tasks h4 {
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    margin-bottom: 0.5rem;
+}
+
+.task-item:hover {
+    background: var(--background-color);
+}
+
+.task-priority {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    color: white;
+}
+
+.task-priority .MuiSvgIcon-root {
+    font-size: 1.2rem;
+}
+
+.task-info {
+    flex: 1;
+}
+
+.task-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.task-header p {
+    margin: 0;
+    color: var(--text-primary);
+}
+
+.task-type {
+    font-size: 0.8rem;
+    padding: 0.2rem 0.5rem;
+    background: var(--background-color);
+    border-radius: 4px;
+    color: var(--text-secondary);
+}
+
+.task-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task-client {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+.task-deadline {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+}
+
+.task-deadline .MuiSvgIcon-root {
+    font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    .task-stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .task-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+
+    .task-details {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+} 

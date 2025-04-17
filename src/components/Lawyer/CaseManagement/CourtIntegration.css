@@ -1,0 +1,145 @@
+.court-integration {
+    padding: 1.5rem;
+}
+
+.court-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.court-header h2 {
+    margin: 0;
+    color: var(--text-primary);
+}
+
+.court-actions {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.court-actions select {
+    padding: 0.6rem;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    font-size: 0.9rem;
+    min-width: 200px;
+}
+
+.sync-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.6rem 1.2rem;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.sync-btn:hover {
+    background: var(--primary-dark);
+}
+
+.process-list {
+    display: grid;
+    gap: 1rem;
+}
+
+.process-card {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: var(--card-shadow);
+}
+
+.process-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.process-info h3 {
+    margin: 0;
+    color: var(--text-primary);
+    font-size: 1rem;
+}
+
+.tribunal-badge {
+    padding: 0.3rem 0.8rem;
+    background: var(--primary-light);
+    color: var(--primary-color);
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.process-status {
+    margin-bottom: 1rem;
+}
+
+.process-status span {
+    color: var(--text-primary);
+    font-weight: 500;
+}
+
+.process-status small {
+    display: block;
+    color: var(--text-secondary);
+    font-size: 0.8rem;
+    margin-top: 0.3rem;
+}
+
+.process-actions {
+    display: flex;
+    gap: 0.8rem;
+}
+
+.process-actions button {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    background: white;
+    color: var(--text-secondary);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.process-actions button:hover {
+    background: var(--background-color);
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+    .court-header {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .court-actions {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .court-actions select {
+        width: 100%;
+    }
+
+    .process-actions {
+        flex-wrap: wrap;
+    }
+
+    .process-actions button {
+        flex: 1 1 calc(50% - 0.4rem);
+        justify-content: center;
+    }
+} 

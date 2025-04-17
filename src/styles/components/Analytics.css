@@ -1,0 +1,122 @@
+/* Analytics Dashboard */
+.analytics-dashboard {
+    padding: 20px;
+}
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.metrics-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.loading-metrics {
+    padding: 40px;
+    text-align: center;
+    color: #6c757d;
+}
+
+/* Charts */
+.chart-container {
+    height: 300px;
+    margin: 20px 0;
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+.stat-item span {
+    color: #6c757d;
+    font-size: 0.9em;
+}
+
+.stat-item strong {
+    font-size: 1.2em;
+    margin-top: 5px;
+}
+
+/* Case Metrics */
+.case-metrics .rate-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 15px;
+}
+
+/* Productivity Metrics */
+.productivity-metrics .completion-stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin: 15px 0;
+}
+
+/* Client Analysis */
+.client-analysis .retention-stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin: 15px 0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .metrics-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Novas classes para o Analytics Dashboard */
+.dashboard-controls {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.compare-toggle {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.compare-toggle input {
+    margin: 0;
+}
+
+/* Estilos para modo de comparação */
+.metrics-card.compare-mode {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.metrics-card.compare-mode .chart-container {
+    height: 250px;
+}
+
+/* Responsividade para modo de comparação */
+@media (max-width: 1024px) {
+    .metrics-card.compare-mode {
+        grid-template-columns: 1fr;
+    }
+}

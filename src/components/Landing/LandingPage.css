@@ -1,0 +1,53 @@
+.landing-container {
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+  background: white;
+}
+
+.header {
+  background: #1E2F38;
+  min-height: 100vh;
+  position: relative;
+  padding: 2rem 5%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: white;
+}
+
+.hero {
+  margin-top: 6rem;
+  color: white;
+  max-width: 600px;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  margin: 1rem 0;
+}
+
+.online-users {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.cta-button {
+  background: #FF0000;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 4px;
+  cursor: pointer;
+} 

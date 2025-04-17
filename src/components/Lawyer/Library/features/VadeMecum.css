@@ -1,0 +1,111 @@
+.vademecum-container {
+    padding: 2rem;
+}
+
+.vademecum-search {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: var(--background-color);
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+.vademecum-search input {
+    flex: 1;
+    border: none;
+    background: transparent;
+    font-size: 1rem;
+    color: var(--text-primary);
+}
+
+.vademecum-search input:focus {
+    outline: none;
+}
+
+.laws-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.law-card {
+    background: var(--background-color);
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: var(--card-shadow);
+}
+
+.law-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+}
+
+.law-title {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.law-title h3 {
+    margin: 0;
+    color: var(--text-primary);
+    font-size: 1.2rem;
+}
+
+.law-year {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+.favorite-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #ffd700;
+}
+
+.expand-button {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: none;
+    border: none;
+    color: var(--text-secondary);
+    cursor: pointer;
+    padding: 0.5rem 0;
+}
+
+.articles-list {
+    margin-top: 1rem;
+    border-top: 1px solid var(--border-color);
+    padding-top: 1rem;
+}
+
+.article-item {
+    margin-bottom: 1.5rem;
+}
+
+.article-item h4 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.article-item p {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .vademecum-container {
+        padding: 1rem;
+    }
+
+    .laws-grid {
+        grid-template-columns: 1fr;
+    }
+} 

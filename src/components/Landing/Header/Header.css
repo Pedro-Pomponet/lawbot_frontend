@@ -1,0 +1,171 @@
+.header {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background: white; /* Fundo branco base */
+  display: flex;
+  flex-direction: column;
+}
+
+.header-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8; /* Ajusta a opacidade da imagem para não ficar muito escura */
+  filter: brightness(1.1); /* Aumenta um pouco o brilho da imagem */
+}
+
+.landing-nav {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 5%;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav-logo img {
+  height: 40px;
+}
+
+.nav-logo span {
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+}
+
+.oab-logo {
+  height: 90px;
+  width: auto;
+}
+
+/* Removido o estilo do .login-btn pois não é mais necessário */
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  padding: 0 5%;
+  margin-top: 2rem;
+  max-width: 600px;
+  height: calc(100vh - 120px);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  animation: fadeIn 0.8s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.subtitle {
+  color: #fff;
+  font-size: 1.3rem;
+  margin-bottom: 0.8rem;
+  display: block;
+  font-weight: 500;
+}
+
+.hero-content h1 {
+  font-size: 3.8rem;
+  color: white;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.consult-text {
+  color: #fff;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  font-weight: 500;
+}
+
+.users-online {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.avatars {
+  display: flex;
+}
+
+.avatars img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 2px solid white;
+  margin-right: -12px;
+}
+
+.users-online p {
+  color: #fff;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.online-dot {
+  width: 8px;
+  height: 8px;
+  background: #00FF00;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.talk-btn {
+  padding: 1rem 2rem;
+  background: #FF0000;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.talk-btn:hover {
+  background: #e60000;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2.8rem;
+  }
+  
+  .oab-logo {
+    height: 70px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+  
+  .users-online {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+} 

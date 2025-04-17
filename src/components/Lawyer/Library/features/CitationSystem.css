@@ -1,0 +1,427 @@
+.citation-system-container {
+    background: white;
+    border-radius: 12px;
+    box-shadow: var(--card-shadow);
+    padding: 1.5rem;
+}
+
+.citation-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.citation-header h3 {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-primary);
+    margin: 0;
+}
+
+.citation-actions {
+    display: flex;
+    gap: 1rem;
+}
+
+.add-citation-button,
+.export-references-button {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.add-citation-button {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+}
+
+.export-references-button {
+    background: none;
+    border: 1px solid var(--text-secondary);
+    color: var(--text-secondary);
+}
+
+.add-citation-button:hover {
+    background: var(--secondary-color);
+}
+
+.export-references-button:hover {
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+    color: white;
+}
+
+.citation-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.citation-form {
+    background: var(--background-color);
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+}
+
+.citation-form h4 {
+    color: var(--text-primary);
+    margin: 0 0 1.5rem 0;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--text-secondary);
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    outline: none;
+    font-size: 1rem;
+    background: white;
+}
+
+.form-group textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.form-group input.error,
+.form-group textarea.error {
+    border-color: #ff4444;
+}
+
+.error-message {
+    color: #ff4444;
+    font-size: 0.8rem;
+    margin-top: 0.3rem;
+    display: block;
+}
+
+.source-search {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+}
+
+.source-search h5 {
+    color: var(--text-primary);
+    margin: 0 0 1rem 0;
+}
+
+.search-input-container {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.search-input {
+    flex: 1;
+    padding: 0.8rem;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    outline: none;
+    font-size: 1rem;
+}
+
+.search-button {
+    padding: 0 1rem;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.search-button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+.search-results {
+    max-height: 300px;
+    overflow-y: auto;
+    border: 1px solid #eee;
+    border-radius: 8px;
+}
+
+.search-result-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.search-result-item:last-child {
+    border-bottom: none;
+}
+
+.search-result-item:hover {
+    background: rgba(30, 47, 56, 0.05);
+}
+
+.result-info h6 {
+    color: var(--text-primary);
+    margin: 0 0 0.5rem 0;
+}
+
+.result-info p {
+    color: var(--text-secondary);
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.result-source {
+    font-style: italic;
+}
+
+.select-source-button {
+    padding: 0.5rem;
+    background: none;
+    border: none;
+    color: var(--primary-color);
+    cursor: pointer;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+}
+
+.select-source-button:hover {
+    background: rgba(30, 47, 56, 0.05);
+}
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.cancel-button,
+.save-button {
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.cancel-button {
+    background: none;
+    border: 1px solid var(--text-secondary);
+    color: var(--text-secondary);
+}
+
+.save-button {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+}
+
+.cancel-button:hover {
+    background: rgba(30, 47, 56, 0.05);
+}
+
+.save-button:hover {
+    background: var(--secondary-color);
+}
+
+.citations-list h4 {
+    color: var(--text-primary);
+    margin: 0 0 1.5rem 0;
+}
+
+.empty-citations {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+    background: var(--background-color);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.empty-citations svg {
+    font-size: 3rem;
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+}
+
+.empty-citations p {
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+}
+
+.add-first-citation {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.8rem 1.5rem;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.citations-grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.citation-item {
+    background: var(--background-color);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.citation-text {
+    position: relative;
+    padding: 1.5rem;
+    background: white;
+    border-bottom: 1px solid #eee;
+}
+
+.quote-icon {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    color: rgba(30, 47, 56, 0.1);
+    font-size: 2rem;
+}
+
+.citation-text p {
+    margin: 0;
+    padding-left: 2.5rem;
+    color: var(--text-primary);
+    font-style: italic;
+}
+
+.citation-details {
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.citation-formatted {
+    margin: 0;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+.citation-item-actions {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.citation-item-actions button {
+    padding: 0.5rem;
+    background: none;
+    border: none;
+    color: var(--text-secondary);
+    cursor: pointer;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+}
+
+.citation-item-actions button:hover {
+    background: rgba(30, 47, 56, 0.05);
+    color: var(--primary-color);
+}
+
+.references-section {
+    background: var(--background-color);
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+.references-section h4 {
+    color: var(--text-primary);
+    margin: 0 0 1.5rem 0;
+}
+
+.references-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.reference-item {
+    display: flex;
+    gap: 0.8rem;
+    padding: 1rem;
+    background: white;
+    border-radius: 8px;
+}
+
+.reference-number {
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.reference-item p {
+    margin: 0;
+    color: var(--text-secondary);
+}
+
+@media (max-width: 768px) {
+    .citation-header {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 1rem;
+    }
+    
+    .citation-actions {
+        justify-content: space-between;
+    }
+    
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .citation-details {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+    
+    .citation-item-actions {
+        align-self: flex-end;
+    }
+} 

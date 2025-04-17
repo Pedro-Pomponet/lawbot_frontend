@@ -1,0 +1,146 @@
+.portal-container {
+    padding: 1.5rem;
+}
+
+.portal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.add-client-button {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.clients-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.client-card {
+    background: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: var(--card-shadow);
+}
+
+.client-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.client-header h3 {
+    margin: 0;
+    color: var(--text-primary);
+}
+
+.status-badge {
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+}
+
+.status-badge.active {
+    background: #e8f5e9;
+    color: #4caf50;
+}
+
+.client-info {
+    margin-bottom: 1.5rem;
+}
+
+.client-email {
+    color: var(--text-secondary);
+    margin: 0 0 1rem 0;
+}
+
+.info-stats {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.stat {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+.client-processes,
+.recent-documents {
+    margin-bottom: 1.5rem;
+}
+
+.client-processes h4,
+.recent-documents h4 {
+    color: var(--text-primary);
+    margin: 0 0 0.5rem 0;
+}
+
+.client-processes ul,
+.recent-documents ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.client-processes li,
+.recent-documents li {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+.client-actions {
+    display: flex;
+    gap: 1rem;
+}
+
+.action-button {
+    flex: 1;
+    padding: 0.75rem;
+    border: 1px solid var(--primary-color);
+    border-radius: 4px;
+    background: none;
+    color: var(--primary-color);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.action-button:hover {
+    background: var(--primary-color);
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .portal-header {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 1rem;
+    }
+
+    .add-client-button {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .info-stats {
+        flex-direction: column;
+    }
+} 
